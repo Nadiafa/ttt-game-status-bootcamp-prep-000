@@ -23,3 +23,5 @@ WIN_COMBINATIONS = [
 def won?(board)
     board.include?("X") || board.include?("O")
 end
+
+#full? #draw? #over? #winner
