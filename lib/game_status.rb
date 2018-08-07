@@ -24,7 +24,6 @@ def won?(board)
   end
 end
 
-   
 def full?(board)
   board.all? {|move| move == "X" || move == "O"}
 end
