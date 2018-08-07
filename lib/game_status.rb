@@ -22,7 +22,7 @@ WIN_COMBINATIONS = [
     # # ./spec/game_status_spec.rb:23:in `block (3 levels) in <top (required)>'
 def won?(board)
   board.each do |position|
-    if position == " " || position == ""
+    position == " " || position == ""
       false
     end
 end
