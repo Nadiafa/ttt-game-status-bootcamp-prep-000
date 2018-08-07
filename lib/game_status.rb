@@ -16,13 +16,23 @@ WIN_COMBINATIONS = [
   [2,4,6]   #Right Diagonal
 ]
 
+# def won?(board)
+#   WIN_COMBINATIONS.detect do |win_combo|
+#     board[win_combo[0]] == board[win_combo[1]] &&
+#     board[win_combo[1]] == board[win_combo[2]] &&
+#     position_taken?(board, win_combo[0])
+#   end
+# end
+
 def won?(board)
-  WIN_COMBINATIONS.detect do |win_combo|
-    board[win_combo[0]] == board[win_combo[1]] &&
-    board[win_combo[1]] == board[win_combo[2]] &&
-    position_taken?(board, win_combo[0])
-  end
+  WIN_COMBINATIONS.detect {|win_combo| board[win_combo[0]] == board[win_combo[1]] && board[win_combo[1]] == board[win_combo[2]] &&
+    position_taken?(board, win_combo[0])}
 end
+
+
+
+
+
 
 def full?(board)
   board.all? {|move| move == "X" || move == "O"}
