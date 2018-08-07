@@ -21,7 +21,7 @@ def won?(board)
     
     #returns false for a draw
     
-    #
+    #returns an array of matching indexes for a top row win
     
     
 end
