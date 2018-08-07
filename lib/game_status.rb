@@ -17,7 +17,10 @@ WIN_COMBINATIONS = [
 
 #won? returns false for an empty board
 def won?(board)
-    board.include?("X") || board.include?("O")
+    board.include?("X")
+end
+def won?(board)
+    board.include?("O")
 end
 
 #full? #draw? #over? #winner
