@@ -17,14 +17,11 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-    #won? returns false for an empty board
-    #board.include?("X") || board.include?("O")
-    
-    WIN_COMBINATIONS.detect do |win_combo|
-      board[win_combo[0]] == board[win_combo[1]] &&
-      board[win_combo[1]] == board[win_combo[2]] &&
-      position_taken?(board, win_combo[0])
-    end
+  WIN_COMBINATIONS.detect do |win_combo|
+    board[win_combo[0]] == board[win_combo[1]] &&
+    board[win_combo[1]] == board[win_combo[2]] &&
+    position_taken?(board, win_combo[0])
+  end
 end
 
    
