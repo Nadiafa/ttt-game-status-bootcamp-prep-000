@@ -19,6 +19,9 @@ def won?(board)
     #won? returns false for an empty board
     board.include?("X") || board.include?("O")
     
+    #returns false for a draw
+    
+    #
     
     
 end
