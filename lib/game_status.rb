@@ -35,16 +35,13 @@ end
 
 def over?(board)
   draw?(board) || won?(board)
-  #   returns true for a won game when the board is full
-  #   returns true for a won game when the board is not full
-  #   returns false for an in-progress game
 end
 
-  # #winner
+def winner(board)
   #   return X when X won
   #   returns O when O won
   #   returns nil when no winner
-    
+end
     
     
     
