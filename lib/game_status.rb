@@ -16,3 +16,7 @@ WIN_COMBINATIONS = [
 ]
 
 # won? returns false for an empty board
+    # Failure/Error: expect(won?(board)).to be_falsey
+    # NoMethodError:
+    #   undefined method `won?' for #<RSpec::ExampleGroups::LibGameStatusRb::Won:0x000000027c6bc0>
+    # # ./spec/game_status_spec.rb:23:in `block (3 levels) in <top (required)>'
