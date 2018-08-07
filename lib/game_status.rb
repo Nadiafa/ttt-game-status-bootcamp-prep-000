@@ -25,10 +25,11 @@ def won?(board)
 end
 
    
-    
-  # #full?
+def full?(board)
+  board.all?
   #   returns true for a draw
   #   returns false for an in-progress game
+  
     
   # #draw?
   #   returns true for a draw
