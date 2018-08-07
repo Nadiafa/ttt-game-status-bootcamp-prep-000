@@ -26,7 +26,7 @@ end
 
    
 def full?(board)
-  board.all? {|move| move == "" || move == " "}
+  board.all? {|move| move == "X" || move == "O"}
   #   returns true for a draw
   #   returns false for an in-progress game
   
