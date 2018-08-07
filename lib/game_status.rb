@@ -30,8 +30,11 @@ def won?(board)
     # returns an array of matching indexes for a right column win
     # returns an array of matching indexes for a left diagonal win
     # returns an array of matching indexes for a right diagonal win
-    WIN_COMBINATIONS.each do |win_combo|
-      if board == win_combo
+    WIN_COMBINATIONS.detect do |win_combo|
+      board[win_combo[0]] == board[cowin_combombo[1]] &&
+      board[win_combo[1]] == board[win_combo[2]] &&
+      position_taken?(board, win_combo[0])
+    end
 end
    
     
