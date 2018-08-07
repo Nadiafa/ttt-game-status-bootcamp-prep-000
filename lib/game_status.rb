@@ -31,16 +31,15 @@ end
     
 def draw?(board)
   full?(board) && !won?(board)
-  
-  #   returns false for a game won in the first row
-  #   returns false for a won game diagonaly
-  #   returns false for an in-progress game
 end   
-  # #over?
+
+def over?(board)
+  full?(board) &&won?(board)
   #   returns true for a won game when the board is full
   #   returns true for a won game when the board is not full
   #   returns false for an in-progress game
-    
+end
+
   # #winner
   #   return X when X won
   #   returns O when O won
