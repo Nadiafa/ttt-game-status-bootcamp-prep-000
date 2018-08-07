@@ -31,7 +31,7 @@ end
     
 def draw?(board)
   full?(board)
-  #board.all? {|move| move == "X" || move == "O"}
+  
   #   returns false for a game won in the first row
   #   returns false for a won game diagonaly
   #   returns false for an in-progress game
