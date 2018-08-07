@@ -30,7 +30,7 @@ def full?(board)
 end
     
 def draw?(board)
-  full?(board)
+  full?(board) && !won?(board)
   
   #   returns false for a game won in the first row
   #   returns false for a won game diagonaly
