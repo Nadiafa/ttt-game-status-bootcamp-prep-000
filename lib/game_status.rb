@@ -38,9 +38,9 @@ def over?(board)
 end
 
 def winner(board)
-  #   return X when X won
-  #   returns O when O won
-  #   returns nil when no winner
+  if winning_combo = won?(board)
+    board[winning_combo.first]
+  end
 end
     
     
