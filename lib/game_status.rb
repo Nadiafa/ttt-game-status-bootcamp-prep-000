@@ -29,7 +29,8 @@ def full?(board)
   board.all? {|move| move == "X" || move == "O"}
 end
     
-  # #draw?
+def draw?(board)
+  board.all? {|move| move == "X" || move == "O"}
   #   returns true for a draw
   #   returns false for a game won in the first row
   #   returns false for a won game diagonaly
