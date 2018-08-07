@@ -30,24 +30,33 @@ def won?(board)
     # returns an array of matching indexes for a right column win
     # returns an array of matching indexes for a left diagonal win
     # returns an array of matching indexes for a right diagonal win
-    
+    WIN_COMBINATIONS.any{|i| i==WIN_COMBINATIONS}
 end
    
     
-  #full?
-    returns true for a draw (FAILED - 10)
-    returns false for an in-progress game (FAILED - 11)
-  #draw?
-    returns true for a draw (FAILED - 12)
-    returns false for a game won in the first row (FAILED - 13)
-    returns false for a won game diagonaly (FAILED - 14)
-    returns false for an in-progress game (FAILED - 15)
-  #over?
-    returns true for a draw (FAILED - 16)
-    returns true for a won game when the board is full (FAILED - 17)
-    returns true for a won game when the board is not full (FAILED - 18)
-    returns false for an in-progress game (FAILED - 19)
-  #winner
-    return X when X won (FAILED - 20)
-    returns O when O won (FAILED - 21)
-    returns nil when no winner (FAILED - 22)
+  # #full?
+  #   returns true for a draw
+  #   returns false for an in-progress game
+    
+  # #draw?
+  #   returns true for a draw
+  #   returns false for a game won in the first row
+  #   returns false for a won game diagonaly
+  #   returns false for an in-progress game
+    
+  # #over?
+  #   returns true for a won game when the board is full
+  #   returns true for a won game when the board is not full
+  #   returns false for an in-progress game
+    
+  # #winner
+  #   return X when X won
+  #   returns O when O won
+  #   returns nil when no winner
+    
+    
+    
+    
+    
+    
+    
