@@ -35,7 +35,7 @@ def draw?(board)
   #   returns false for a game won in the first row
   #   returns false for a won game diagonaly
   #   returns false for an in-progress game
-    
+end   
   # #over?
   #   returns true for a won game when the board is full
   #   returns true for a won game when the board is not full
