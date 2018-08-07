@@ -25,7 +25,6 @@ def won?(board)
       board[win_combo[1]] == board[win_combo[2]] &&
       position_taken?(board, win_combo[0])
     end
-    
 end
    
     
